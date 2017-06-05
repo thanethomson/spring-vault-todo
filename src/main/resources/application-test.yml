@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/todo_test
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+vault:
+  enabled: true
+  token: 18ba798d-43d3-b666-254f-80f4469cf6f6
+
+todo:
+  admin-user:
+    enabled: true
+    password: admin
+
+security:
+  basic:
+    enabled: false
+
+logging:
+  level:
+    com:
+      thanethomson:
+        demos:
+          todo: debug

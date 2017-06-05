@@ -1,0 +1,29 @@
+{
+  "properties": [
+    {
+      "name": "vault.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Whether or not to enable Vault for secrets access."
+    },
+    {
+      "name": "vault.uri",
+      "type": "java.net.URI",
+      "description": "The URI endpoint at which to access Vault."
+    },
+    {
+      "name": "vault.token",
+      "type": "java.lang.String",
+      "description": "The authentication token to use when communicating with Vault."
+    },
+    {
+      "name": "todo.admin-user.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Is the admin user (superuser) enabled? Usually only relevant for testing."
+    },
+    {
+      "name": "todo.admin-user.password",
+      "type": "java.lang.String",
+      "description": "The password for our admin user, if enabled."
+    }
+  ]
+}

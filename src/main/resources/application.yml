@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/todo
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+  data:
+    rest:
+      base-path: /api
+
+vault:
+  enabled: true
+  uri: http://localhost:8200
+  token: supply-me-from-environment-variables
+
+todo:
+  admin-user:
+    enabled: false
+    password: admin

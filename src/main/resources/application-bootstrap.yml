@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+vault:
+  enabled: false
+  uri: http://localhost:8200
+  token: supply-me-from-environment-variable
