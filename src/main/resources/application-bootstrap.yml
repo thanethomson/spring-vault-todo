@@ -9,5 +9,3 @@ spring:
 
 vault:
   enabled: false
-  uri: http://localhost:8200
-  token: supply-me-from-environment-variable
