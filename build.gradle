@@ -60,10 +60,14 @@ dependencies {
     optional("org.springframework.boot:spring-boot-configuration-processor")
 }
 
+// Allows us to inject the active profiles parameter (from -Dspring.profiles.active=XXX)
+// while running the bootRun command.
 bootRun {
     systemProperty 'spring.profiles.active', System.properties['spring.profiles.active']
 }
 
+// Allows us to inject the active profiles parameter (from -Dspring.profiles.active=XXX)
+// while running the test command.
 test {
     systemProperty 'spring.profiles.active', System.properties['spring.profiles.active']
 }
@@ -73,4 +77,6 @@ task wrapper(type: Wrapper) {
     distributionUrl = "https://services.gradle.org/distributions/gradle-$gradleVersion-all.zip"
 }
 
+// Allows us to include our descriptions of custom Spring configuration entries in our
+// application.yml (and related) file(s).
 compileJava.dependsOn(processResources)
