@@ -15,8 +15,9 @@ application:
 * [Gradle](https://gradle.org/)
 * [Docker](https://www.docker.com/)
 
-Then go through the tutorial (link to be posted soon) to see how
-to configure the relevant containers (Vault and PostgreSQL) for testing.
+Then go through the [tutorial](https://thanethomson.com/2017/06/06/enterprise-security-spring-vault/)
+to see how to configure the relevant containers (Vault and PostgreSQL)
+for testing.
 
 ## License
 This work is licensed under a
